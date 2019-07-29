@@ -1,0 +1,226 @@
+@charset"uft-8";
+/*样式初始化*/
+body,h1,h2,h3,h4,p,a,ul,li,ol,dl,dt,dd,span,i {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+p {
+	word-break: break-word;
+}
+input,
+select {
+	outline: none;
+}
+/*清除浮动*/
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+.clearfix {
+	zoom:1;
+}
+/*有效区域1200，居中*/
+.box-1200 {
+	width:1200px;
+	margin:0 auto;
+}
+.daohang ul li:nth-child(11) a {
+	height: 19px;
+	background-color: #ffffff;
+	border-radius: 4px;
+}
+/*bannerl轮播图区域*/
+.hidden-img {
+	display: none;
+}
+.banner {
+	width: 1440px;
+	height: 350px;
+	margin: 0 auto;
+	background: url(../img/tux1.jpg);
+	animation: banner 30s infinite linear;
+	position: relative;
+}
+@keyframes banner {
+	0% {
+		background: url(../img/tux1.jpg);
+	}
+	10% {
+		background: url(../img/tux1.jpg);
+	}
+	20% {
+		background: url(../img/tux2.jpg);
+	}
+	30% {
+		background: url(../img/tux2.jpg);
+	}
+	40% {
+		background: url(../img/tux3.jpg);
+	}
+	50% {
+		background: url(../img/tux3.jpg);
+	}
+	60% {
+		background: url(../img/tux4.jpg);
+	}
+	70% {
+		background: url(../img/tux4.jpg);
+	}
+	80% {
+		background: url(../img/tux5.jpg);
+	}
+	90% {
+		background: url(../img/tux5.jpg);
+	}
+	100% {
+		background: url(../img/tux1.jpg);
+	}
+}
+.banner1 {
+	width: 435px;
+	height: 25px;
+	background: rgba(78,73,78,0.5);
+	border-radius: 15px;
+	position: absolute;
+	bottom: 10px;
+	left: 500px;
+}
+.banner1 span {
+	color:#fff;
+	padding: 0 12px;
+}
+/*地区板块*/
+.bgimg {
+	width: 1200px;
+	height: 100px;
+	background: url(../img/tux6.jpg) no-repeat center;
+	margin: 0 auto;
+}
+.yi {
+	float:left;
+}
+.hover1,
+.img1 img {
+	width: 370px;
+	height: 370px;
+}
+.hover1 {
+	margin: 0 10px 10px 0;
+	position: relative;
+	overflow: hidden;
+}
+.zi {
+	text-align: center;
+	position: absolute;
+    bottom: -40px;
+    width: 100%;
+}
+.zi .zi1{
+	color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.zi .zi2 {
+	color: rgba(255,255,255,.8);
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.zi .zi3 {
+	height: 40px;
+	color: rgba(255,255,255,.8);
+    font-size: 14px;
+    padding: 0 5px 0 10px;
+    margin-top: 10px;
+}
+.hover1:hover .zi1 {
+	transform: translateY(-30px);
+    transition: 4s;
+}
+.hover1:hover .zi3 {
+	transform: translateY(-50px);
+    transition: 4s;
+}
+.hover1:hover .zi2 {
+	transform: translateY(40px); 
+	transition: 4s;
+}
+.hover1:hover img {
+	transition: 4s;
+	transform: scale(1.2);
+}
+/*泰国板块调整--美国板块调整*/
+.hover2,
+.hover2.img1 img {
+	width: 370px;
+	height: 180px;
+}
+/*迪拜澳大利亚板块*/
+.hover3,
+.hover3.img1 img {
+	width: 180px;
+	height: 180px;
+}
+.eryi,
+.er,
+.san {
+	float: left;
+}
+.hover4,
+.hover4.img1 img {
+	width: 180px;
+	height: 370px;
+}
+.hover5,
+.hover5.img1 img {
+	width: 250px;
+	height: 180px;
+}
+/*热门目的地*/
+.mudi {
+	margin-top: 30px;
+}
+.mudi h3 {
+	color: #59738c;
+	font-size: 20px;
+	text-align: center;
+}
+.line {
+	width: 1200px;
+	height: 1px;
+	border-top: 1px dashed #ffc900;
+	margin: 5px 0;
+}
+.chengshi ul {
+	width: 1000px;
+	margin: 0 auto;
+}
+.chengshi li {
+	float: left;
+	width: 88px;
+	height: 30px;
+	border: 1px solid #cdd3dd;
+	margin:5px 10px 5px 0;
+	text-align: center;
+}
+.chengshi li a {
+	color: #59738c;
+	font-size: 12px;
+	line-height: 30px;
+}
+.mudi ul li:hover {
+	background: #96dcf3;
+}

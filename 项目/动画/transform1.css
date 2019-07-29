@@ -1,0 +1,44 @@
+@charset"uft-8";
+
+
+.tong {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	background: #ccc;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+.one {
+	background:rgba(16,67,236,0.75);
+	transform:rotateZ(225deg);
+}
+.two {
+	background:rgba(16,67,236,0.75);
+	transform:rotateZ(225deg);
+}
+.three {
+	background:rgba(16,67,236,0.75);
+	transform:rotateZ(225deg);
+}
+.four {
+	background:rgba(16,67,236,0.75);
+	transform:rotateZ(225deg);
+}
+.five {
+	background:rgba(16,67,236,0.75);
+	transform:rotateZ(225deg);
+}
+.six {
+	background:rgba(16,67,236,0.75);
+	transform:rotateZ(225deg);
+}
+.seven {
+	background:rgba(16,67,236,0.75);
+	transform:rotateZ(225deg);
+}
+.eight {
+	background:rgba(16,67,236,0.75);
+	transform:rotateZ(225deg);
+}

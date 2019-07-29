@@ -1,0 +1,169 @@
+@charset"uft-8";
+ul,li,a，p,h3 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration:none;
+}
+input,select {
+	outline: none;
+}
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+.clearfix {
+	zoom:1;
+}
+/*左边机票部分*/
+.ticket {
+	height: 270px;
+	width: 602px;
+	border:1px solid #d8d8d8;
+}
+.ticket .kj {
+	float: left;
+}
+.ticket .kj .ticket1 {
+	width: 80px;
+	height: 37px;
+	background-color:#ffffff;
+	line-height: 37px;
+	font-size: 14px;
+	text-align: center;
+}
+.ticket .kj .ticket2 {
+	width: 80px;
+	height: 233px;
+	background-color: #3d3d3d;
+}
+.ticket .kj .ticket2 li {
+	text-align: center;
+}
+.ticket .kj .ticket2 li a {
+	line-height: 33px;
+	font-size: 13px;
+	color: #fff;
+}
+/*右边城市特价部分*/
+.ticket .kj1 {
+	margin-left: 80px;
+}
+/*右边*/
+.kj1 {
+	width: 522px;
+	height: 270px;
+	background: #fff;
+}
+.ticket3 {
+	width: 522px;
+	height: 37px;
+	background-color:#ffffff;
+	border-bottom: 1px solid #e1e1e1;
+	box-sizing: border-box;
+}
+.kj1 .ticket3 li {
+	float: left;
+	font-size: 14px;
+	line-height: 35px;
+	margin-right: 19px;
+	height: 35px;
+}
+.kj1 .ticket3 li:nth-child(1) {
+	margin-left:27px; 
+}
+.kj1 .ticket3 li a {
+	color: #6c6c6c;
+}
+/*radioa按钮*/
+.ticket4 {
+ 	margin: 20px 0 0 20px; 
+ 	float: left;
+}
+.chengshi p {
+	color: #6c6c6c;
+ 	margin: 10px 0 3px 0;
+}
+.chengshi input {
+ 	width: 230px;
+ 	height: 25px;
+ 	border-radius: 3px;
+ 	border: 1px solid #c7d1e4;
+ 	text-indent: 8px;
+}
+.ticket5 { 
+	width: 230px;
+	float: right;
+	margin-top:21px;
+	margin-right: 20px;
+}
+.ticket5 h3 {
+	font-size: 14px;
+	color: #f39b02;
+	font-weight:normal;
+	margin-left:112px;
+}
+.kj1 div input[type="button"] {
+	width: 142px;
+	height: 30px;
+	background-color: #ffc900;
+	border-radius: 3px;
+	border: none;
+	float: right;
+	margin:20px 20px 0 0; 
+}
+/*国内城市调位置*/
+.kj1 .tiaowei {
+	margin-top: 40px;
+}
+.children {
+	margin: 18px 0 0 20px;
+	float: left;
+}
+.kj1 .children span {
+	font-size: 12px;
+	color: #888;
+}
+.kj1 .children p {
+	color: #666;
+	margin-top: 2px;
+}
+.kj1 .guoji1 {
+	width: 230px;
+ 	height: 25px;
+ 	border-radius: 3px;
+ 	border: 1px solid #c7d1e4;
+ 	margin-top: 4px;
+ 	position: relative;
+}
+.kj1 .guoji input {
+	width: 120px;
+	padding: 0px;
+	border: none;
+	position: absolute;
+	top: 0px;
+	left: 1px;
+}
+.kj1 .guoji1 select {
+	width: 110px;
+	height: 25px;
+	border: none;
+	border-left: 1px solid #c7d1e4;
+	position: absolute;
+	top: 0;
+	left: 120px;
+}
+.kj1 div .sousuo {
+	position: relative;
+	top: 65px;
+}
+/*国际城市位置调整*/
+.kj1 .tiaowei1 {
+	margin-top: 41px;
+}

@@ -1,0 +1,288 @@
+@charset"uft-8";
+/*样式初始化*/
+body,h1,h2,h3,h4,p,a,ul,li,ol,dl,dt,dd,span,i {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+p {
+	word-break: break-word;
+}
+input,
+select {
+	outline: none;
+}
+html,
+body {
+	height: 100%;
+}
+/*清除浮动*/
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+.clearfix {
+	zoom:1;
+}
+/*有效区域1200，居中*/
+.box-1200 {
+	width:1200px;
+	margin:0 auto;
+}
+/*页眉部分*/
+.top {
+	widows: 100%;
+	height: 30px;
+	background-color: #f2f2f2;
+	font-size: 12px;
+	line-height: 30px;
+}
+.top .box-1200 {
+	width:1200px;
+	margin:0 auto;
+}
+.top .box-1200 .left {
+	float: left;
+}
+.top .box-1200 img {
+	height: 12px;
+}
+.top .box-1200 a {
+	color: #6c6c6c;
+}
+.top .box-1200 span {
+	color: #aaaaaa;
+} 
+.top .box-1200 .right ul {
+	float: right;
+}
+.top .box-1200  ul li {
+	height: 28px;
+	float: left;
+	margin-left: 15px;
+	padding: 0 3px;
+	border: 1px solid #f2f2f2;
+	position: relative;
+}
+.top .box-1200 .right ul li i {
+	transition: 0.5s linear;
+}
+.top .box-1200 a:hover {
+	color: #fdca18;
+}
+.top .box-1200 li:nth-child(2n):hover {
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+}
+.top .box-1200 .right li:hover i {
+	transform: rotate(180deg);
+}
+.top .box-1200 .right li:nth-child(7):hover i {
+	transform: rotate(0deg);
+}
+.top .box-1200 li:nth-child(7):hover {
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	box-sizing: border-box;
+}
+.top .box-1200 .right .box {
+	width: 60px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	padding: 8px 5px;
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	color: #6c6c6c;
+	position: absolute;
+	top: 28px;
+	left: -1px;
+	display: none;
+}
+.top .box-1200 .right ul li:hover .box {
+ 	display: block;
+ }
+ /*页眉网站导航*/
+.top .box-1200 .right ul li .box1 {
+ 	width: 843px;
+ 	position: absolute;
+ 	top: 28px;
+ 	right: 0px;	
+ 	z-index: 99;
+ }
+ .top .box-1200 .right ul li .box1 {
+ 	background-color:#fff; 
+ 	border: 1px solid #e5e5e5;
+ 	display: none;
+ }
+.top .box-1200 .right ul li .box1 div {
+ 	float: left;
+ 	border-left: 1px solid #ccc;
+ 	margin: 20px 0;
+ }
+ .top .box-1200 .right ul li .box1 div:nth-child(1) {
+ 	border:none;
+ }
+ .top .box-1200 .right ul li .box1 div h3 {
+ 	padding: 0 20px;
+ }
+.top .box-1200 .right ul li .box1 div span {
+ 	padding: 0 20px;
+ }
+ .top .box-1200 .right ul li:hover .box1 {
+ 	display: block;
+ }
+ /*登录页面*/
+ /*登录页面背景图*/
+ .signin {
+ 	height: 100%;
+ 	width: 100%;
+ 	background-image: url(../img/巴黎1.jpg);
+ 	padding-top: 30px;
+ 	background-origin: content-box;
+ 	background-clip: content-box;
+ 	box-sizing:border-box;
+ 	position: absolute;
+ 	top: 0;
+ 	border: none;
+ }
+
+/*登录*/
+.signin8 {
+	width: 605px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+.logo2 {
+	height: 60px;
+	width: 605px;
+	margin: 0 auto;
+	background: url(../img/logo2.png) no-repeat center;
+	background-size: 150px; 
+}
+ iframe {
+ 	height: 427px;
+	width: 605px;
+	border: none;
+ }
+/*iframe登录*/
+.signin7 {
+	width: 100%;
+	height: 100%;
+	background-image:url(../img/巴黎1.jpg);
+}
+.kuanjia {
+	height: 410px;
+	width: 591px;
+}
+.denglu1 {
+	height: 365px;
+	width: 591px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	background:#fff;
+}
+.denglu1 .dlleft {
+	width: 370px;
+	height: 315px;
+	border-right: 1px solid #ebebeb;
+	margin: 25px 0;
+	float: left;
+}
+.dlleft .dltop {
+	width: 320px;
+	height: 180px;
+	margin:0 25px 25px 25px;
+}
+.dlleft .dltop input {
+	width: 320px;
+	height: 40px;
+	border: 1px solid #d8d8d8;
+	border-radius: 5px;
+	margin-bottom:10px;
+	text-indent: 13px; 
+}
+.dlleft .dltop input:nth-child(4) {
+	margin: 10px 0 20px 0;
+}
+.dlleft .dltop p {
+	text-align: right;
+}
+.dlleft .dltop a {
+	color: #ffc900;
+	font-size: 12px;
+}
+.dlleft .dltop input:nth-child(4) {
+	background-color: #ffc900;
+}
+.dlleft .dlbottom {
+	height: 95px;
+	width: 320px;
+	padding: 25px;
+	border-top: 1px solid #d8d8d8;
+}
+.dlleft .dlbottom p {
+	font-size: 12px;
+	color: #999999;
+	margin-bottom:20px;
+}
+.dlleft .dlbottom p a img {
+	width: 40px;
+	height: 40px;
+}
+.dlleft .dlbottom p a {
+	margin-right: 45px;
+}
+/*二维码扫码*/
+.dlright {
+	width: 220px;
+	height: 220px;
+	margin: 25px 0;
+	float: left;
+}
+.dlright img {
+	width: 175px;
+	height: 175px;
+	margin:0 25px 25px;
+}
+.dlright p {
+	font-size: 14px;
+	text-align: center;
+}
+/*切换注册页面*/
+.qiehuan {
+	width:200px;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 30px; 
+	border-radius: 15px;
+	margin-top: 10px;
+	background: rgba(61,60,60,0.3);
+	text-align: center;
+}
+.qiehuan span {
+	color: #fff;
+}
+.qiehuan span a {
+	color: #ffc900;
+}
+/*注册页面*/
+.denglu1 .dlleft .dltop p span {
+	color: #acacac;
+	font-size: 12px;
+}

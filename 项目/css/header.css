@@ -1,0 +1,412 @@
+@charset"uft-8";
+/*样式初始化*/
+body,h1,h2,h3,h4,p,a,ul,li,ol,dl,dt,dd,span,i {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+img {
+	border: none;
+}
+p {
+	word-break: break-word;
+}
+input,
+select {
+	outline: none;
+}
+/*清除浮动*/
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+.clearfix {
+	zoom:1;
+}
+/*有效区域1200，居中*/
+.box-1200 {
+	width:1200px;
+	margin:0 auto;
+}
+.xuanze .box-1200 iframe {
+	width: 1200px;
+	height: 330px;
+	border: none;
+
+}
+/*iframe*/
+.kuanjia1 {
+	width: 1200px;
+	height: 320px;
+}
+.header1 {
+	width: 1200px;
+	height: 282px;
+	border-bottom:3px solid #f2f2f2;
+}
+.header1 span {
+	display:inline-block;
+	width: 70px;
+}
+.header1 h3 {
+	color: #ffc900;
+	margin: 10px 30px;
+}
+.header2 {
+	height: 245px;
+	border: 1px solid #e0e0e0;
+	border-top: 2px solid #ffc900;
+}
+.header2 ul li a {
+	color: #333;
+}
+.header2 ul {
+	height: 40px;
+	font-size: 15px;
+	background-color: #fdf9e6;
+	border-bottom: 1px solid #e0e0e0;
+}
+.header2 ul li {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+}
+.header2 .jingnei,
+.jingwai,
+.mudidi1,
+.jiage,
+.fuwu {
+	width: 1140px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	border-bottom: 1px dashed #e0e0e0;
+	margin: 0 20px;
+}
+.header2 input {
+	vertical-align:middle;
+}
+.header2 label {
+	margin-right: 35px;
+}
+.header2 label:hover,
+.jiage a:hover {
+	color: #ffc900;
+}
+.header2 .jingnei a, .mudidi1 a,.fuwu a {
+	color:#999999;
+	float: right;
+}
+.jiage a {
+	color: #999999;
+	margin-right: 40px;
+}
+.jiage input {
+	width: 65px;
+	height: 20px;
+	border: 1px solid #e0e0e0;
+}
+.jiage i {
+	color: #e0e0e0;
+}
+.jiage input:nth-child(12) {
+	width: 45px;
+	height: 22px;
+	background: #ff5000;
+	border: none;
+	color: #fff;
+}
+.gengduo a {
+	color: #999999;
+	background-color: #f2f2f2;
+	padding: 5px 20px;
+	float: right;
+}
+/*门票部分分类*/
+.jingwai i {
+	font-size: 12px;
+	color: #ffc900;
+}
+.mudidi1 span:nth-child(2) {
+	color: #ffc900;
+}
+.header4 {
+	width: 1180px;
+    height: 242px;
+    border-bottom: 3px solid #f2f2f2;
+}
+.header5 {
+	height: 204px;
+    border: 1px solid #e0e0e0;
+    border-top: 2px solid #ffc900;
+}
+/*特色体验*/
+.jingwai a {
+	color: #666;
+	margin-right: 30px;
+}
+.jingwai a:nth-child(10) {
+	color:#999999;
+	float: right;
+	margin: 0;
+}
+.jingwai a:nth-child(10) i {
+	color:#999999;
+}
+
+
+/*价格排序*/
+.paixu {
+	height: 40px;
+	line-height: 40px;
+	width: 1200px;
+	margin: 0 auto;
+	background: #f8f8f8;
+	border:1px solid #e0e0e0;
+}
+.paixu>.box-1200>span {
+	display: inline-block;
+	font-size: 12px;
+	border-right: 1px solid #e0e0e0;
+}
+.paixu>.box-1200>span>a {
+	color: #333;
+	margin: 13px 20px;
+}
+.paixu>.box-1200>span:nth-child(1) a {
+	color: #ffc900;
+}
+.paixu .zuoyou {
+	font-size: 12px;
+	float: right;
+	margin-right: 10px; 
+}
+.paixu .zuoyou a {
+	color: #333;
+}
+.paixu .zuoyou a:nth-child(1) {
+	color: #999;
+}
+/*搜索内容*/
+.xiangqing {
+	width: 1200px;
+	height: 900px;
+	margin-top: 20px; 
+}
+.xqleft {
+	float: left;
+}
+.shunxu {
+	width: 900px;
+	height: 206px;
+}
+.shunxu .zuo {
+	width: 200px;
+	height: 160px;
+	margin: 20px 0px 20px 20px;
+	position: relative;
+	float: left;
+}
+.shunxu .zuo img {
+	width: 200px;
+	height: 160px;
+	float: left;
+}
+.zuo .chufa {
+	width: 200px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #ffc900;
+	background: rgba(60,62,62,0.8);
+	position: absolute;
+	bottom: 0;
+}
+.shunxu .you {
+	width: 655px;
+	height: 185px;
+	border-bottom: 1px solid #e0e0e0;
+	float: left;
+	margin-top: 20px;
+}
+.you .wenzi {
+	width: 489px;
+	margin-left: 20px;
+	float: left;
+}
+.you .wenzi h3 a{
+	color: #333;
+	font-size: 20px;
+	line-height: 20px;
+}
+.you .wenzi p:nth-child(2) {
+	margin-top: 10px;
+	font-size: 12px;
+	line-height: 18px;
+}
+.you .wenzi span {
+	font-size: 12px;
+	color: #999;
+	border: 1px solid #dddddd;
+}
+.you .wenzi span:nth-child(3) {
+	font-size: 12px;
+	color: #ff5000;
+	border: 1px solid #ffd4d4;
+}
+.you .wenzi p {
+	color: #666666;
+	font-size: 12px;
+	line-height: 18px;
+}
+.you .wenzi p:nth-child(7) {
+	color: #333;
+}
+.you .chakan {
+	width: 145px;
+	text-align: center;
+	float: left;
+}
+.you .chakan span:nth-child(1) a {
+	font-size: 10px;
+	color: #ff5000;
+}
+.you .chakan span:nth-child(2) a {
+	font-size: 25px;
+	color: #ff5000;
+}
+.you .chakan span:nth-child(3) a {
+	font-size: 12px;
+	color: #999999;
+}
+.you .chakan input {
+	width:120px;
+	height: 48px;
+	color: #fff;
+	background: #ff5000;
+	border: none;
+	border-radius: 3px;
+	margin-top: 40px;
+}
+.shunxu:hover{
+	background: rgba(249,221,117,0.3);
+}
+/*详情右边*/
+.xqright {
+	width: 290px;
+	background: #f2f2f2;
+	float: right;
+}
+.baozhang {
+	margin: 20px 30px;
+}
+.xqright .baozhang h1 a {
+	color: #5f7c9b;
+	font-size:22px;
+}
+.xqright .baozhang p {
+	height: 18px;
+}
+.xqright .baozhang p a {
+	color:#7990aa;
+	font-size:12px;
+	line-height: 16px;
+}
+.line5 {
+	width: 230px;
+	height: 2px;
+	background: #5f7c9b;
+	margin: 0 auto;
+}
+.chuyou1 {
+	margin-left: 30px;
+	float: left;
+}
+.xqright h2 a {
+	font-size: 38px;
+	color: #5f7c9b;
+}
+.waijiao {
+	float: left;
+}
+.waijiao p {
+	height: 12px;
+}
+.waijiao p a {
+	font-size: 10px;
+	line-height: 12px;
+	color: #5f7c9b;
+}
+.line6 {
+	width: 230px;
+	height: 2px;
+	background: #e0e0e0;
+	margin: 0 auto;
+	margin:20px;
+}
+.kefu {
+	text-align: center;
+}
+.kefu p:nth-child(1) {
+	color: #666666;
+	font-size: 15px;
+}
+.kefu p:nth-child(2) {
+	color: #666666;
+	font-size: 25px;
+}
+/*选择页数*/
+.ye li {
+	float: left;
+	padding: 0 15px;
+	border: 1px solid #999;
+	margin-right: 5px;
+	text-align: center;
+	
+}
+.ye ul {
+	height: 32px;
+	line-height: 24px;
+}
+.ye li a {
+	color: #355976;
+	font-size: 10px;
+}
+.ye li:nth-child(1) a {
+	color: #ffc900;
+}
+.ye .yeshu input[type="text"] {
+	width: 45px;
+	height: 20px;
+	border: 1px solid #d2dfec;
+}
+.ye .yeshu input[type="button"] {
+	width: 48px;
+	height: 24px;
+	background: #ffc900;
+	border-radius: 3px;
+	border: none;
+}
+.haoshu {
+	float: left;
+	margin-top:40px;
+	margin-left: 120px;
+}
+.yeshu {
+	float: left;
+	margin-top: 44px;
+	margin-left: 20px;
+}
+.haoshu ul li a:hover {
+	color: #ffc900;
+}
