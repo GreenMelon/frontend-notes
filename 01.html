@@ -13,7 +13,11 @@
 <body>
 	<input type="button" value="删除子元素" onclick="deleteOp()">
 	<input type="button" value="替换子元素" onclick="replaceOp()">
-	<div id="d1"><h1>标题1</h1></div>
+	<!-- 规范写法 -->
+	<div id="d1">
+		<h1>标题1</h1>
+	</div>
+
 	<p>段落1</p>
 	<p>段落2</p>
 	<p>段落3</p>
@@ -52,12 +56,11 @@
         	var d1 = document.getElementById("d1");
         	var p = d1.getElementsByTagName("p");
         	var len = p.length;
-        	for(var i=0;i<len;i++){
-        		console.log(i);
-        		console.log(p[i]);
-        		d1.removeChild(p[i]);
-        	}
-
+        	if (len) {
+				console.log(0);
+        		console.log(p[0]);
+        		d1.removeChild(p[0]);
+			}
         }
 
         function replaceOp(){
