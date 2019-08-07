@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dom</title>
+	<style>
+		.c1 {
+			color:yellow;
+			font-size:24px;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="删除子元素" onclick="deleteOp()">
+	<input type="button" value="替换子元素" onclick="replaceOp()">
+	<div id="d1"><h1>标题1</h1></div>
+	<p>段落1</p>
+	<p>段落2</p>
+	<p>段落3</p>
+	<p>段落4</p>
+	<p>段落5</p>
+	<script>
+		var p = document.getElementsByTagName("p");
+		for(var i=0;i<p.length;i++){
+			p[i].style.border="1px solid red";
+			p[i].style.borderColor="blue";
+			p[i].style.borderWidth="5px";
+			p[i].className="c1";
+			p[i].innerHTML=p[i].innerHTML+"<a href=''>新增</a>内容"+i;
+			p[i].onmouseover=function(){//绑定事件处理函数
+                this.style.backgroundColor="green";
+			}
+			p[i].onmouseout=function(){
+				this.style.backgroundColor="";
+			}
+		}
+		var d1 = document.getElementById("d1");
+		d1.style.border="1px solid red";
+		var h1 = d1.getElementsByTagName("h1");
+		for(var i=0;i<10;i++){
+			//创建元素节点
+			var e = document.createElement("p");
+			//创建文本节点
+			var t = document.createTextNode("代码创建的段落"+i);
+			e.appendChild(t);
+			//d1.appendChild(e);
+			//d1.insertBefore(e,d1.firstChild);
+			d1.insertBefore(e,h1[0]);
+		}
+
+        function deleteOp(){
+        	var d1 = document.getElementById("d1");
+        	var p = d1.getElementsByTagName("p");
+        	var len = p.length;
+        	for(var i=0;i<len;i++){
+        		console.log(i);
+        		console.log(p[i]);
+        		d1.removeChild(p[i]);
+        	}
+
+        }
+
+        function replaceOp(){
+        	var d1 = document.getElementById("d1");
+        	var p = d1.getElementsByTagName("p");
+        	var a = document.createElement("a");
+        	a.href='https://www.baidu.com';
+        	a.innerHTML="百度";
+        	d1.replaceChild(a,p[0]);
+        }
+
+	</script>
+</body>
+</html>
