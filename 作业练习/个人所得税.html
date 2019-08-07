@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp" placeholder="请输入工资数值">
+    <button type="button" onclick="shui()">计算所得税</button>
+    </br>
+    <input type="text" id="shuijin">
+    <script>
+        function shui() {
+            var a=parseInt(inp.value);
+            console.log(a);
+            if(a<=3500){
+                shuijin.value=a;
+            }
+            else if(a>3500&&a<=5000){
+                var a=a*0.03;
+                shuijin.value=a;
+            }
+            else if(a>5000&&a<=9000){
+                var a =a*0.1;
+                shuijin.value=a;
+            }
+            else if(a>9000) {
+                var a = a*0.2;
+                shuijin.value=a;
+            }
+            else {
+                window.alert("请输入正确数值")
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    矩形长：<input type="text" id= a1>
+    <br>
+    矩形宽：<input type="text" id= b1>
+    <br>
+    <button onclick="cha()" value="">计算</button>
+    <script>
+        function cha() {
+            var a =Number(document.getElementById('a1').value);
+            var b =Number(document.getElementById('b1').value);
+            var c =a*b;
+            var d =(a+b)*2;
+            alert("矩形的长"+a+"宽"+b+"面积为："+c+"周长为:"+d);
+        }
+    </script>
+</body>
+</html>

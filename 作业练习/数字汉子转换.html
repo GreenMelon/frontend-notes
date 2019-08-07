@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp" placeholder="请输入0-9阿拉伯数字">
+    <button type="button" onclick="fun()">验证</button>
+    </br>
+    <input type="text" id="suiyi">
+    <script>
+    function fun(){
+        var a =parseInt(inp.value);
+        console.log(a);
+        switch(a){
+            case 0:
+            suiyi.value='零';
+            console.log(typeof suiyi.value);
+            break;
+            case 1:
+            suiyi.value='壹';
+            break;
+            case 3:
+            suiyi.value='叁';
+            break;
+            case 4:
+            suiyi.value='肆';
+            break;
+            case 5:
+            suiyi.value='伍';
+            break;
+            case 6:
+            suiyi.value='陆';
+            break;
+            case 7:
+            suiyi.value='柒';
+            break;
+            case 8:
+            suiyi.value='捌';
+            break;
+            case 9:
+            suiyi.value='玖';
+            break;
+            default:
+            window.alert('请输入0-9的数值');
+            break;
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 输入数值，判断成绩
+        var score =parseInt(prompt("请输入你的成绩"));
+        switch (true){
+            case score>=0&&score<60:
+                document.write('成绩不及格'+"</br>");
+                break;
+            case score>=60&&score<=70:
+                document.write('成绩及格'+"</br>");
+                break;
+            case score>70&&score<=80:
+                document.write('成绩良'+"</br>");
+                break;
+            case score>80&&score<100:
+                document.write('成绩为优'+"</br>");
+                break;
+            case score==100:
+                document.write('满分'+"</br>");
+                break;
+            default:
+                alert('成绩无效');
+        }
+    </script>
+</body>
+</html>

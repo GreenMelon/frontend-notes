@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="ipt">
+    <button type="button" onclick="shezhi()">转换</button>
+    </br>
+    <input type="text" id="ipt1">
+    <button type="button" onclick="shezhi1()">转换</button>
+    </br>
+    <input type="text" id="ipt2">
+    <button type="button" onclick="shezhi2()">转换</button>
+    </br>
+    <!-- <button type="button2" onclick="button2()"></button> -->
+    <script>
+        function shezhi() {
+            var str = parseInt(ipt.value);
+            console.log(str);
+            var a = str.toString('2');
+            console.log(typeof(a));
+            window.alert(a);
+        }    
+        function shezhi1() {
+            var str1 = parseInt(ipt1.value);
+            var a = str1.toString('8');
+            window.alert(a);
+        }
+        function shezhi2() {
+            var str2 = parseInt(ipt2.value);
+            var a = str2.toString('10');
+            window.alert(a);
+        }
+    </script>
+</body>
+</html>

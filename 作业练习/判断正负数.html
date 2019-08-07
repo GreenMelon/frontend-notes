@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id = suiyi>
+    <script>
+        var a = prompt('请输入一个阿拉伯数字');
+            suiyi.value=a;
+        if(a>0) {
+            suiyi.value=a+'是一个正数';
+        }else if(a<0){
+            suiyi.value=a+'是一个负数';
+        }else if(a==0){
+            suiyi.value=a+'不是正数也不是负数';
+        }
+        else{
+            suiyi.value='请输入阿拉伯数字';
+        }
+    </script>
+</body>
+</html>

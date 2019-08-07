@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id='a1'>：输入数值
+    <br>
+    <input type="text" id='b1'>：输入数值
+    <br>
+    <button onclick="cha()">求最大值</button>
+    <script>
+        function cha(){
+            var a=Number(document.getElementById('a1').value);
+            var b=Number(document.getElementById('b1').value);
+            if(a>b){
+                alert('最大值是'+a);
+            }else{
+                alert('最大值是'+b);
+            }
+        }
+    </script>
+</body>
+</html>

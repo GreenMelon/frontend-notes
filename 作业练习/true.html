@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a =10;
+        var b =10;
+        document.write( a++>++b ); //false
+        document.write('</br>');
+        document.write('a='+ a );  //a=11
+        document.write('</br>');
+        document.write('b='+ b );  //b=11
+        document.write('</br>');
+
+        var userAge = 10;
+        var userName;
+        document.write(typeof(userName)); //undefined
+        document.write('</br>');
+        document.write( userAge++ > 10 &&userName=='tom' ); //false
+        document.write('</br>');
+        document.write( userAge++ >= 10 &&userName=='tom' ); //false
+        document.write('</br>');
+        document.write( ++userAge< 10 || userName=='tom' ); //false
+        document.write('</br>');
+        document.write( ++userAge> 10 || userName=='tom' ); //true
+        document.write('</br>');
+    </script>
+</body>
+</html>

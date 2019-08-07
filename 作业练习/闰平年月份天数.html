@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id=suiyi>
+    <input type="text" id =suiyi1>
+    <script>
+         // 输入年份，判断是否为闰年,天数，输入月份，判断天数
+         var years =parseInt(prompt("请输入年份"));
+           suiyi.value=years;
+        if(years%4==0&&years%100!=0||years%400==0){
+            suiyi.value=years+"是闰年，有366天";
+        }else{
+            suiyi.value=years+'是平年，有365天';
+        }
+        var month = prompt('请输入月份')
+        suiyi1.value=month+"月";
+        if((years%4==0&&years%100!=0||years%400==0)&&(month==2)) {
+            suiyi1.value=month+"月"+'有29天';
+        }else if (month==2) {
+            suiyi1.value=month+"月"+'有28天';
+        }else if (month==1||month==3||month==5||month==7||month==8||month==10||month==12){
+            suiyi1.value=month+"月"+'有31天';
+        }else if (month==4||month==6||month==9||month==11){
+            suiyi1.value=month+"月"+'有30天';
+        }
+    </script>
+</body>
+</html>

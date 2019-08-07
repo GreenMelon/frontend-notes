@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var years=Number(prompt('请输入年份'));
+        var month=Number(prompt('请输入月份'));
+        var day=Number(prompt('请输入日期'));
+        function getDay(years,month,day) {
+            var arr=[31,28,31,30,31,30,31,31,30,31,30,31]
+            if(years%4==0&&years%100==0||years%400!=0) {
+                arr[1]+=1;
+            }
+            if(month==1){
+                return day;
+            }else{
+                for(i=0;i<=month-2;i++){
+                    day+=arr[i];
+                }
+                return day;
+            }
+        }
+        window.alert(years+"年"+month+"月"+day+"日是这一年的第"+getDay(years, month , day)+"天");
+
+    </script>
+</body>
+</html>
