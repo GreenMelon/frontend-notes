@@ -1,0 +1,104 @@
+@charset "uft-8";
+html,body,h1,h2,h3,h4,p,a,ul,li,ol,dl,dt,dd,span,i {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+	display: block;
+}
+.clearfix {
+	zoom:1;
+}
+div.top {
+    background-color: #e7eef4;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    border-bottom: 1px solid #91b2dc;
+}
+.formtext {
+    width: 650px;
+}
+.information {
+    line-height: 40px;
+    border-top: 1px solid #f4f8fd;
+}
+h1 {
+    font-size: 18px;
+    margin: 20px 5px;
+}
+.member {
+    display:inline-block;
+    width: 110px;
+    text-align: right;
+}
+.information input {
+    width:180px;
+}
+.isprompt {
+    color: red;
+    line-height: 30px;
+}
+b {
+    color: #0057cf;
+}
+input[type='checkbox'] {
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+}
+h2 {
+    font-size: 18px;
+    margin: 40px 5px 5px 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f4f8fd;
+}
+.choose {
+    color:#0057cf;
+}
+.inteoduce1 {
+    width: 110px;
+    text-align:right;
+    float: left;
+    padding-top: 66px;
+}
+textarea {
+    float: left;
+    margin-bottom: 8px;
+}
+.agreeOn {
+    height: 120px;
+    width: 550px;
+    border: 2px solid #bcbdc2;
+    margin-left: 8px;
+    overflow-y: scroll;
+}
+.agreeOn p:nth-child(2),
+.agreeOn p:nth-child(3),
+.agreeOn p:nth-child(4) {
+    text-indent: 15px;
+}
+.logon button {
+    width: 90px;
+    height: 30px;
+    border: 1px solid #278bc6;
+    background-color: #58c0ff;
+    border-radius:5px;
+}
+.logon button:nth-child(1) {
+    margin: 20px 0 30px 20px;
+}
+.logon button:nth-child(2) {
+    margin: 20px 0 30px 280px;
+}

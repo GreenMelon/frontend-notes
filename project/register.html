@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="top">
+        <span>您现在所在的位置：</span>
+        <a href="">首页</a>
+        <a href="">>会员注册</a>
+    </div>
+    <div class="formtext">
+        <img src="img/regtop.gif" alt="">
+        <form action="doRegister.php" method="post" name="regForm" onsubmit="return checkForm()">
+            <h1>基本信息（必填）</h1>
+            <div class="information">
+                <span class="member">会员名：</span>
+                <input type="text" name="userName" onblur="checkUserName()" onfocus="tipName()">
+                <span id="nameMsg" class="isprompt">*</span>
+            </div>
+            <div class="information">
+                <span class="member">会员密码：</span>
+                <input type="password" name="userPwd" onblur="checkUserPwd()">
+                <span id="pwdMsg" class="isprompt">*</span>
+            </div>
+            <div class="information">
+                <span class="member">确认密码：</span>
+                <input type="password" name="reuserPwd" onblur="checkReuserPwd()">
+                <span id="repwdMsg" class="isprompt">*</span>
+            </div>
+            <div class="information">
+                <span class="member">电子邮箱：</span>
+                <input type="text" name="email" onblur="checkEmail()">
+                <span id="emailMsg" class="isprompt">*</span>
+            </div>
+            <h2>联系信息（可选）</h1>
+            <b>
+                <input type="checkbox">显示可选信息
+            </b>
+            <div class="information">
+                <span class="member">真实姓名：</span>
+                <input type="text" onblur="checkrealName()" name="realName">
+                <span id="realNameMsg" class="isprompt"></span>
+            </div>
+            <div class="information">
+                <span class="member">身份证号：</span>
+                <input type="text" name="idCard" onblur="checkIdcard()">
+                <span id="idCardMsg"></span>
+            </div>
+            <div class="information">
+                <span class="member" >移动号码：</span>
+                <input type="text" name="phone" onblur="checkPhone()">
+                <span id="phoneMsg"></span>
+            </div>
+            <div class="information">
+                <span class="member">固定电话：</span>
+                <input type="text" name="rePhone" onblur="checkRephone()">
+                <span id="rePhonemsg"></span>
+            </div>
+            <div class="information">
+                <span class="member">出生日期：</span>
+                <select name="" id="">
+                    <option value="">1995</option>
+                    <option value="">1996</option>
+                    <option value="">1997</option>
+                    <option value="">1998</option>
+                    <option value="">1999</option>
+                    <option value="">2000</option>
+                    <option value="">2001</option>
+                </select>
+                <span>年</span>
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                </select>
+                <span>月</span>
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                </select>
+                <span>日</span>
+            </div>
+            <div class="information">
+                <span class="member">详细地址：</span>
+                <input type="text" name="">
+                <span id=""></span>
+            </div>
+            <div class="information">
+                <span class="member">个人爱好：</span>
+                <input type="checkbox" name="UserLikes" onclick="checkUserLikes()">爬山
+                <input type="checkbox" name="UserLikes" onclick="checkUserLikes()">潜泳
+                <input type="checkbox" name="UserLikes" onclick="checkUserLikes()">篮球
+                <span class="choose">
+                    <input type="checkbox" name="checkAll" onclick="selectAll()" value="checkAll">[全选/全不选]
+                </span>
+                <span id="likeMsg"></span>
+            </div>
+            <div class="information clearfix">
+                <div class="inteoduce1">个人介绍：</div>
+                <textarea name="introduce" id="" cols="55" rows="10"></textarea>
+            </div>
+            <div class="information">
+                <input type="checkbox" onclick="checkUserAgreement()" id="UserAgreement">
+                <span class="">用户协议:(已经详细阅读并同意该《用户协议》)</span>
+                <span id="UserAgreementMsg"></span>
+            </div>
+            <div class="agreeOn">
+                <p>欢迎您成为该网站用户</p>
+                <p>请认真阅读下面协议，只有您接收协议才能继续进行注册。</p>
+                <p>1.服务条款的确认和接纳</p>
+                该网站用户服务的所有权和运作权归本网站所有。该网站所提供的服务将按照有关章程、服务条款
+                和操作规则严格执行。用户通过注册程序点击“我同意”按钮，即表示用户与本网站达成协议并接受
+                所有服务条款。
+                <p>2.服务条款内容</p>
+                <p>该网站用户服务的所有权和运作权归本网站所有。该网站所提供的服务将按照有关章程、服务条款
+                和操作规则严格执行。用户通过注册程序点击“我同意”按钮，即表示用户与本网站达成协议并接受
+                所有服务条款。</p>
+            </div>
+            <div class="logon">
+                <button>提交</button>
+                <button>重置</button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="js/register.js"></script>
+</body>
+</html>
